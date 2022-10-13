@@ -18,11 +18,9 @@ def decoding(cod_in):
     print(list_cod_in)
     decod_out = ''
     i = 0
-    while i <= len(list_cod_in):
-        decod_out = decod_out + str(list_cod_in[i + 1])*(int(list_cod_in[i]))
+    while i < len(list_cod_in):
+        decod_out += str(list_cod_in[i + 1])*(int(list_cod_in[i]))
         i += 2
-        print(decod_out)
-    print(decod_out)
     return decod_out
   
 string_new = input('Введите данные для сжатия: ')
