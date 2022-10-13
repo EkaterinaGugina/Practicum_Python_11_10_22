@@ -1,52 +1,6 @@
 # вариант человек против бота без интеллекта:
 from random import randint
 
-def input_dat(name):
-    x = int(input(f"{name}, введите сколько конфет возьмете (число от 1 до 28): "))
-    while x < 1 or x > 28:
-        x = int(input(f"{name}, такое количество конфет брать нельзя! \
-            \n Введите количество конфет (число от 1 до 28): "))
-    return x
-
-
-def res_kon_print(name, k, counter, value):
-    print(f"Ходил {name}, он взял {k}, теперь у него {counter}. На столе осталось {value} конфет.")
-
-name1 = input("Введите имя первого игрока: ")
-player2 = input("Введите имя второго игрока: ")
-value = int(input("Введите количество конфет на столе: "))
-flag = randint(0,2) # флаг очередности
-if flag:
-    print(f"Первый ходит {player1}")
-else:
-    print(f"Первый ходит {player2}")
-
-counter1 = 0 
-counter2 = 0
-
-while value > 28:
-    if flag:
-        k = input_dat(player1)
-        counter1 += k
-        value -= k
-        flag = False
-        p_print(player1, k, counter1, value)
-    else:
-        k = input_dat(player2)
-        counter2 += k
-        value -= k
-        flag = True
-        p_print(player2, k, counter2, value)
-
-if flag:
-    print(f"Выиграл {player1}")
-else:
-    print(f"Выиграл {player2}")
-    
-    
-#     # вариант человек против человека:
-# from random import randint
-
 # def input_dat(name):
 #     x = int(input(f"{name}, введите сколько конфет возьмете (число от 1 до 28): "))
 #     while x < 1 or x > 28:
@@ -55,36 +9,130 @@ else:
 #     return x
 
 
-# def p_print(name, k, counter, value):
-#     print(f"Ходил {name}, он взял {k}, теперь у него {counter}. На столе осталось {value} конфет.")
+# def res_out_print(name, k, count, value):
+#     print(f"Ход: {name}, взял {k}, теперь у него {count}. В кучке сталось {value} конфет.")
 
-# name1 = input("Введите имя первого игрока: ")
-# player2 = input("Введите имя второго игрока: ")
-# value = int(input("Введите количество конфет на столе: "))
-# flag = randint(0,2) # флаг очередности
+# name1, name2 = "Человек", "БотA"
+# value = 2021
+# flag = randint(0,2)  # очередность: 0 - человек, 1 - БотА
 # if flag:
-#     print(f"Первый ходит {player1}")
+#     print(f"Первый ходит {name1}")
 # else:
-#     print(f"Первый ходит {player2}")
+#     print(f"Первый ходит {name2}")
 
-# counter1 = 0 
-# counter2 = 0
+# count1 = 0 
+# count2 = 0
 
 # while value > 28:
 #     if flag:
-#         k = input_dat(player1)
-#         counter1 += k
+#         k = input_dat(name1)
+#         count1 += k
 #         value -= k
 #         flag = False
-#         p_print(player1, k, counter1, value)
+#         res_out_print(name1, k, count1, value)
 #     else:
-#         k = input_dat(player2)
-#         counter2 += k
+#         k = randint(1,29)
+#         count2 += k
 #         value -= k
 #         flag = True
-#         p_print(player2, k, counter2, value)
+#         res_out_print(name2, k, count2, value)
 
 # if flag:
-#     print(f"Выиграл {player1}")
+#     print(f"Выиграл {name1}")
 # else:
-#     print(f"Выиграл {player2}")
+#     print(f"Выиграл {name2}")
+    
+    
+    
+    
+# вариант человек против человека (не знают стратегию):
+# def input_dat(name):
+#     x = int(input(f"{name}, введите сколько конфет возьмете (число от 1 до 28): "))
+#     while x < 1 or x > 28:
+#         x = int(input(f"{name}, такое количество конфет брать нельзя! \
+#             \n Введите количество конфет (число от 1 до 28): "))
+#     return x
+
+# def res_out_print(name, k, count, value):
+#     print(f"Ход: {name}, взял {k}, теперь у него {count}. В кучке сталось {value} конфет.")
+
+# name1, name2 = "Первый игрок", "Второй игрок"
+# value = 2021
+# flag = randint(0,2)             # очередность: 0 - 1человек, 1 - 2человек
+# if flag:
+#     print(f"Первый ходит {name1}")
+# else:
+#     print(f"Первый ходит {name2}")
+
+# count1 = 0 
+# count2 = 0
+# while value > 28:
+#     if flag:
+#         k = input_dat(name1)
+#         count1 += k
+#         value -= k
+#         flag = False
+#         res_out_print(name1, k, count1, value)
+#     else:
+#         k = input_dat(name2)
+#         count2 += k
+#         value -= k
+#         flag = True
+#         res_out_print(name2, k, count2, value)
+
+# if flag:
+#     print(f"Выиграл {name1}")
+# else:
+#     print(f"Выиграл {name2}")
+    
+
+
+
+# Вариант человек против БотаВ с интеллектом, знающего стратегию. Сколько конфет нужно взять первому игроку, чтобы забрать все конфеты у своего конкурента?
+# def input_dat(name):
+#     x = int(input(f"{name}, введите сколько конфет возьмете (число от 1 до 28): "))
+#     while x < 1 or x > 28:
+#         x = int(input(f"{name}, такое количество конфет брать нельзя! \
+#             \n Введите количество конфет (число от 1 до 28): "))
+#     return x
+
+# def res_out_print(name, k, count, value):
+#     print(f"Ход: {name}, взял {k}, теперь у него {count}. В кучке сталось {value} конфет.")
+
+# name1, name2 = "Человек", "БотВ"
+# value = 121
+# flag = randint(0,2)             # очередность: 0 - 1человек, 1 - 2человек
+# if flag:
+#     print(f"Первый ходит {name1}")
+# else:
+#     print(f"Первый ходит {name2}")
+    
+#     # Т.к. 2021 делится на 28 с остатком = 15 первый игрок всегда победит, если в первый раз возьмет 15, потом будет дополнять сумму взятых за кон конфет до 28+1.
+#     #  Для 121 конфеты число первого хода равно 9
+# k = int(121 % 28)
+# count1 = k
+# value = value - k
+# if flag:                   # Первый ход - случайное число 
+#         flag = False
+#         res_out_print(name1, k, count1, value)
+# else:
+#     flag = False
+#     res_out_print(name1, k, count2, value)
+# while value > 28:
+#     if flag:
+#         k = input_dat(name1)
+#         count1 += k
+#         value -= k
+#         flag = False
+#         res_out_print(name1, k, count1, value)
+#     else:
+#         k = input_dat(name2)
+#         count2 += k
+#         value -= k
+#         flag = True
+#         res_out_print(name2, k, count2, value)
+
+# if flag:
+#     print(f"Выиграл {name1}")
+# else:
+#     print(f"Выиграл {name2}")

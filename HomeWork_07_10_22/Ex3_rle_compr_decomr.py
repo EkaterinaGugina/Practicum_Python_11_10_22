@@ -33,8 +33,15 @@ print(str1)
 
 rar_str = coding(str1)
 print(f'Результат сжатия: {rar_str}')
+
+with open('file_1.txt', 'w') as f2:
+    f2.write(rar_str)
+    
 rar_str1 = decoding(rar_str)
 print(f'Результат восстановления: {rar_str1}')
+
+with open('file_1.txt', 'w') as f2:
+    f2.write(rar_str1)
 
 
 # import Ex4_function as f
