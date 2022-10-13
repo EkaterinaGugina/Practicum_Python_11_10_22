@@ -42,6 +42,7 @@ a) Добавьте игру против бота
 
 Входные и выходные данные хранятся в отдельных текстовых файлах.
 
-Выполнение программы:
+Код программы и её выполнение программы:
 
-![пример 4]()
+![пример 3](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/Ex3_rle_compr_decomr.png)
+![выполнение примера 3](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/result_Ex3_rle_compr_decomr.png)
