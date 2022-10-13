@@ -24,8 +24,8 @@ a) Добавьте игру против бота; б) против бота с
 
 Выполнение программы:
 
-![пример 1](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/Ex1_confi_bot.png)
-
+![пример 1](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/Ex1_conf_bot.png)
+![результат примера 1](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/result_Ex1_confi_bot.png)
 ### Ex2_(продолжение Ex1) Подумайте как наделить бота ""интеллектом""
 
 Выполнение программы:
