@@ -30,7 +30,7 @@ a) Добавьте игру против бота; б) против бота с
 
 Код программы и её выполнение:
 
-![пример 3]()
+![пример 2](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/Ex2_null_tab.png)
 
 ### Ex4_compresion_data   Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
 
