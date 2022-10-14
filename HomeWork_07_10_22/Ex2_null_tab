@@ -1,0 +1,28 @@
+# Создайте программу для игры в ""Крестики-нолики"".
+
+nul_x_tab = [[None, None, None], [None, None, None], [None, None, None]]
+game_is_on = True
+while game_is_on:
+    # Крестик - латинская буква X, нолик - латинская буква O 
+    # Ходы принимаются в формате [0][0] = "X" или [2][1] = "О"
+    move = input()
+    exec("nul_x_tab" + move)
+    for row in nul_x_tab:
+        print(row)
+    
+    tab_victory = [
+        nul_x_tab[0],
+        nul_x_tab[1],
+        nul_x_tab[2],
+        [i[0] for i in nul_x_tab],
+        [i[1] for i in nul_x_tab],
+        [i[2] for i in nul_x_tab],
+        [nul_x_tab[0][0], nul_x_tab[1][1], nul_x_tab[2][2]],
+        [nul_x_tab[0][2], nul_x_tab[1][1], nul_x_tab[2][0]]
+    ]
+    for elem in tab_victory:
+        result = list(set(elem))
+        if len(result) == 1 and result[0] != None:
+            print("Game over!")
+            game_is_on = False
+            break

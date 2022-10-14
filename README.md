@@ -22,19 +22,13 @@
 
 a) Добавьте игру против бота; б) против бота с интеллектом
 
-Выполнение программы:
+Код программы и её выполнение:
 
 ![пример 1](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/Ex1_conf_bot.png)
-![результат примера 1](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/result_Ex1_confi_bot.png)
-### Ex2_(продолжение Ex1) Подумайте как наделить бота ""интеллектом""
 
-Выполнение программы:
+### Ex2_Создайте программу для игры в ""Крестики-нолики"
 
-![пример 2]()
-
-### Ex3_Создайте программу для игры в ""Крестики-нолики"
-
-Выполнение программы:
+Код программы и её выполнение:
 
 ![пример 3]()
 
@@ -42,7 +36,7 @@ a) Добавьте игру против бота; б) против бота с
 
 Входные и выходные данные хранятся в отдельных текстовых файлах.
 
-Код программы и её выполнение программы:
+Код программы и её выполнение:
 
 ![пример 3](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/Ex3_rle_compr_decomr.png)
 ![выполнение примера 3](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_07_10_22/result_Ex3_rle_compr_decomr.png)
