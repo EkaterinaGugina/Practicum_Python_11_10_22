@@ -54,3 +54,16 @@ while len(eval_lst) > 2:
         break
 print(res)
 
+
+# evalution = evalution.replace(' ', '')
+# num_list = []
+# num = ''
+# for char in evalution:
+#     if char.isdigit():
+#         num = num + char
+#         print(num)
+#     else:
+#         num_list.append(int(num))
+#         num_list.append(char)
+#         num = ''
+# num_list.append(int(num))
