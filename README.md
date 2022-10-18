@@ -8,7 +8,7 @@
 
 ![пример 1](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_11_10_22/Ex1_spisok_differ_filter.png)
 
-### Ex2_sum_num_real_filter. Найти сумму цифр вещественного числа..
+### Ex2_sum_num_real_filter. Найти сумму цифр вещественного числа.
 
 Код программы и её выполнение:
 
