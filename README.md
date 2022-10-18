@@ -8,11 +8,10 @@
 ![пример 1](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_11_10_22/Ex1_spisok_differ_filter.png)
 
 ### Ex2_sum_num_real_filter. Найти сумму цифр вещественного числа.
->>>>>>> ab46c1add65e45a0861360513fcefd401dac1dbf
 
 Код программы и её выполнение:
 
-![пример 2]()
+![пример 2](https://github.com/EkaterinaGugina/Practicum_Python_11_10_22/blob/main/HomeWork_11_10_22/Ex2_sum_num_real_filter.png)
 
 ### Ex3_sum_elem_not_mod_2 Задайте список из нескольких чисел. Напишите программу, которая найдёт сумму элементов списка, стоящих на нечётной позиции. Пример: [2, 3, 5, 9, 3] -> (на нечётных позициях элементы 3 и 9) ответ: 12
 
